@@ -120,11 +120,9 @@ const displayController = (() => {
         if (checkVertical(activePlayer)){return endGame();}
         if (checkDiagonal(activePlayer)){return endGame();}
         if (Board.gameBoardFull()) {return alert("It's a tie!")}
-        console.log(Board.getGameBoard());
 
         turn+=1;
         swapTurns();
-        console.log("CURRENT PLAYER TURN: ", activePlayer, turn);
 
     };
 
@@ -176,7 +174,7 @@ const displayController = (() => {
     };
 
     const endGame = () => {
-        alert("winner is: " + activePlayer.name);
+        alert("Winner is: " + activePlayer.name + "!");
 
     };
 

@@ -71,8 +71,8 @@ const blankFrontEnd = () => {
 
 const displayController = (() => {
     
-    let player1 = playerFactory(prompt("Enter your Name: "), "X");
-    let player2 = playerFactory(prompt("Enter your Name: "), "O");
+    let player1 = playerFactory(prompt("Enter Player 1: "), "X");
+    let player2 = playerFactory(prompt("Enter Player 2: "), "O");
     
     if (player1.name == "" || player1.name == null) player1.name = "Player 1";
     if (player2.name == "" || player2.name == null) player2.name = "Player 2";
